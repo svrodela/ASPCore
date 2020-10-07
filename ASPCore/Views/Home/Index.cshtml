@@ -1,8 +1,28 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@model AlumnoModel
+
+@{
+    ViewData["Title"] = "Pagina de Alumnos ";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+
+
+
+    <div class="text-center">
+        <h1 class="display-4">Bienvenido</h1>
+
+        <br />
+        <b> Numero de Control</b> @Model.NC
+        <br />
+        <b>Nombre</b> @Model.Nombre
+        <br />
+        <b>Apellido Paterno</b> @Model.App
+        <br />
+        <b>Apellido Materno</b> @Model.Apm
+        <br />
+        <b>Carrera</b> @Model.Carrera
+        <br />
+        <b>Fecha Ingreso</b> @Model.FechaIngreso
+        <br />
+        <b>Promedio</b> @Model.Promedio
+        <br />
+    </div>
